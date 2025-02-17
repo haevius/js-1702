@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const display = document.getElementById("display");
 
     // affiche correctement 
-    const update = () => display.textContent = current "0";
+    const update = () => display.textContent = current || "0";
 
     // pour écrire les chiffres
     document.querySelectorAll(".number").forEach(btn =>
