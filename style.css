@@ -1,0 +1,84 @@
+/* fichier css pour que la calculatrice ressemble à une calculatrice */ 
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    background-color: #f4f4f4;
+}
+
+.calculator {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#display {
+    font-size: 40px;
+    background: #222;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: right;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    font-size: 25px;
+    padding: 10px;
+    border: none;
+    background-color: #C6C5B9;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #b0afa5;
+}
+
+button.operator {
+    background-color: #BEB2C8;
+    color: white;
+}
+
+button.operator:hover {
+    background-color: #9d92a6;
+}
+
+button#equal {
+    background-color: #D7D6D6;
+    color: white;
+    grid-column: span 4;
+}
+
+button#equal:hover {
+    background-color: #c4b9b9;
+}
+
+button#clear {
+    background-color: #6d7586;
+    color: white;
+}
+
+button#clear:hover {
+    background-color: #525a69;
+}
+
+button#toggle-sign {
+    background-color: #8D8D92;
+    color: white;
+}
+
+button#toggle-sign:hover {
+    background-color: #6d6d79;
+}
